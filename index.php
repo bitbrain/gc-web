@@ -10,7 +10,6 @@
  */
 
 include_once('Core/Core.php');
-include_once('Core/GalacticumProgressBar.php');
 
 $description = '<h2>2D space game</h2>';
 $description .= '<p>Galacticum is a space game written in Java ('
@@ -36,9 +35,25 @@ $prototype .= '<div align="left"><iframe width="800" height="600" src="https://w
                      frameborder="0" allowfullscreen></iframe></div>';
 $progress = '<h2>Progress</h2>';
 
-$progressBar = new GalacticumProgressBar($metaData);
-$progress .= '<div id="version">Current version: <a href="#">' . $metaData['APP_VERSION'] . $metaData['APP_PHASE'] . '</a></div>';
-$progress .= $progressBar;
+$progress .= '<div class="progress"></div>';
+
+
+$progress .= "<script type='text/javascript'>
+$('.progress').icebearProgress({
+    datasource : 'proxy.php?url=https://raw.github.com/MyRealityCoding/galacticum/master/res/meta.json',
+    duration : 2500,
+    onEnterPhase : function(element) {
+        element.find('.caption').animate({
+            color: '#eda743'
+        }, 650);
+    },
+    onLeavePhase : function(element) {
+        element.find('.caption').animate({
+            color : '#fff'
+        }, 1000);
+    }
+});
+</script>";
 
 $team = '<h2>Team</h2>';
 $teamView = new GalacticumTeam();

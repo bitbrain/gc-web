@@ -15,7 +15,6 @@ include_once('GalacticumLayout.php');
 include_once('functions.php');
 include_once('GalacticumTeam.php');
 
-$metaData = getMetaData('https://galacticum.googlecode.com/svn/trunk/res/xml/meta.xml');
 $layout = new GalacticumLayout();
 
 ?>

@@ -38,8 +38,7 @@ class GalacticumTeam extends TeamView {
 	// Dennis
 	$dennis = new TeamMember('Dennis Pawlik', 'Developer');
 	$dennis->setEmail('pawlik.dennis@gmail.com');
-
-	$this->addMember($dennis);
+	$dennis->addSocialNetwork(new SocialNetwork('facebook', '', 'Facebook'));
     }
 }
 

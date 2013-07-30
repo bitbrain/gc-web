@@ -35,7 +35,7 @@ $prototype .= '<div align="left"><iframe width="800" height="600" src="https://w
                      frameborder="0" allowfullscreen></iframe></div>';
 $progress = '<h2>Progress</h2>';
 
-$progress .= '<div class="progress"></div>';
+$progress .= '<div class="progress"><span class=".cell">Loading progress...</span></div>';
 
 
 $progress .= "<script type='text/javascript'>

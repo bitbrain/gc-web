@@ -6,7 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-div.team_members {
+div.team {
     display:table;
     width:auto;
 }
@@ -31,11 +31,11 @@ div.member div.name {
     color:yellowgreen;
 }
 
-div.image {
+div.member .avatar {
     margin-bottom:0px;
 }
 
-div.image img {
+div.member img {
     width:160px;
     height:160px;
     border:4px solid #222;
@@ -45,28 +45,16 @@ div.image img {
 div.member div.job {
     font-size:14px;
     margin-bottom:5px;
+     color:darkorange;
 }
 
-div.member div.job.developer {
-    color:darkorange;
-}
-
-div.member div.job.graphics {
-    color:#deff00;
-}
-
-div.member div.job.music {
-    color:fuchsia;
-}
-
-
-div.link {
+div.member a.social {
     margin:auto;
     margin-bottom:5px;
     font-size:12px;
 }
 
-div.link a {
+div.member a.social {
     width:160px;
     display:inline-block;
     background-color:black;
@@ -75,38 +63,47 @@ div.link a {
     color:white;
 }
 
-div.link a.facebook {
+div.member a.facebook {
     background-color:#3b5998;
     border-color:#334770;
 }
 
-div.link a.facebook:hover {
+div.member a.facebook:hover {
     background-color:#4c6bac;
 }
 
-div.link a.twitter {
+div.member a.twitter {
     background-color:#31b9f3;
     border-color:#38a1cd;
 }
 
-div.link a.twitter:hover {
+div.member a.twitter:hover {
     background-color:#5fc8f4;
 }
 
-div.link a.website {
+div.member a.website {
     background-color:#8c613d;
     border-color:#644a35;
 }
 
-div.link a.website:hover {
+div.member a.website:hover {
     background-color:#ab7549;
 }
 
-div.link a.email {
+div.member a.email {
     background-color:#789338;
     border-color:#5f6f37;
 }
 
-div.link a.email:hover {
+div.member a.email:hover {
     background-color:#829a48;
+}
+
+div.member a.googleplus {
+    background-color:#c34b4b;
+    border-color:#a42b2b;
+}
+
+div.member a.googleplus:hover {
+    background-color:#b33e3e;
 }

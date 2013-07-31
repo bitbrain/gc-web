@@ -14,7 +14,7 @@ include_once('Core/Core.php');
 $description = '<h2>2D space game</h2>';
 $description .= '<p>Galacticum is a space game written in Java ('
               . '<a href="http://slick2d.org">Slick2D</a> and '
-              . '<a href="http://dev.my-reality.de/chronos">Chronos</a>).
+              . '<a href="http://chronos.my-reality.de">Chronos</a>).
                 This game is still under development.</p>';
 $description .= 'The following features are planned:';
 $description .= '<ul>
@@ -37,8 +37,18 @@ $progress = '<h2>Progress</h2>';
 
 $progress .= '<div class="progress"><span class=".cell">Loading progress...</span></div>';
 
+$team = '<h2>Team</h2>';
 
-$progress .= "<script type='text/javascript'>
+$team .= '<div class="team"></div>';
+
+$technologies = '<h2>Used technologies</h2>';
+$technologies .= '<ul>';
+$technologies .= '<li><a href="http://slick2d.org">Slick2D</a></li>';
+$technologies .= '<li><a href="http://chronos.my-reality.de">Chronos</a></li>';
+$technologies .= '</ul>';
+
+
+$scripts .= "<script type='text/javascript'>
 $('.progress').icebearProgress({
     datasource : 'proxy.php?url=https://raw.github.com/MyRealityCoding/galacticum/master/res/meta.json',
     duration : 2500,
@@ -53,18 +63,11 @@ $('.progress').icebearProgress({
         }, 1000);
     }
 });
+
+$('.team').icebearTeam({
+    datasource : 'proxy.php?url=https://raw.github.com/MyRealityCoding/galacticum/master/res/meta.json'
+});
 </script>";
-
-$team = '<h2>Team</h2>';
-$teamView = new GalacticumTeam();
-$team .= $teamView;
-
-$technologies = '<h2>Used technologies</h2>';
-$technologies .= '<ul>';
-$technologies .= '<li><a href="http://slick2d.org">Slick2D</a></li>';
-$technologies .= '<li><a href="http://dev.my-reality.de/chronos">Chronos</a></li>';
-$technologies .= '<li><a href="http://phys2d.cokeandcode.com">Phys2D</a></li>';
-$technologies .= '</ul>';
 
 $layout->setTitle('A dark journey');
 $layout->addContent($progress);
@@ -72,5 +75,6 @@ $layout->addContent($description);
 $layout->addContent($prototype);
 $layout->addContent($team);
 $layout->addContent($technologies);
+$layout->addContent($scripts);
 $layout->render();
 ?>

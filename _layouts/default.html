@@ -29,11 +29,15 @@
 
 		<div class="wrapper">
 	
-			<div class="head cell"><div class="banner"></div></div>
+			{% include head.html %}
+			
+			<div class="responsive">
 
-			{{ content }}
+				{{ content }}
+				{% include footer.html %}
+				
 
-			<div class="footer cell">Footer</div>
+			</div>
 
 		</div>
 

@@ -1,5 +1,3 @@
-//custom css goes here
-
 /*
 
 Contents
@@ -16,6 +14,9 @@ Contents
 
 // 1. Imports
 // --------------------------------------------------
+
+@import "fonts";
+
 
 // 2. Navigation
 // --------------------------------------------------
@@ -34,17 +35,52 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: top center;
+	font-family: spacy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: spacy;
+	margin:0px;
+}
+
+h2 {
+	line-height:40px;
+}
+
+.responsive {
+	margin:auto;
+	width:55%;
+	margin-top:20px;
 }
 
 .cell {
 	background-color: transparent;
 	background-image:url(../img/transparent.png);
 	background-repeat: repeat;
+	padding:15px;
+}
+
+.green-text, .footer a {
+	background: -webkit-linear-gradient(#deff00, #688316);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blue-text {
+	background: -webkit-linear-gradient(#0060ff, #490d8c);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .head {
 	text-align: center;
 	padding-top:10px;
+	padding-bottom:15px;
+}
+
+.footer {
+	margin-top:20px;
+	margin-bottom:30px;
 }
 
 .banner {
@@ -57,4 +93,14 @@ body, html {
 	background-position: top center;
 	width:250px;
 	height:100px;
+}
+
+// 5. Media queries
+// --------------------------------------------------
+
+@media (max-width: 750px) {
+
+	.responsive {
+		width:90%;
+	}
 }

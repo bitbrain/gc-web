@@ -7,3 +7,20 @@ exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scs
 
 info: Galacticum is an infinite space game. Discover the universe and conquer planets!
 
+navigation:
+- text: Download
+  title: News, Tutorials and more.
+  url: /
+- text: Progress
+  title: Progress of the game
+  url: /
+- text: wiki
+  title: Official galacticum wiki
+  url: /
+
+links:
+- name: Impressum
+  url: /
+- name: dev blog
+  url: /
+

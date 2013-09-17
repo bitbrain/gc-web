@@ -21,6 +21,40 @@ Contents
 // 2. Navigation
 // --------------------------------------------------
 
+.navigation {
+
+	.link-text {
+		margin-left:5px;
+	}
+
+	.item {
+		display:table-cell;
+		text-align:center;
+		font-size:24px;
+		border:15px solid transparent;
+		border-left:0px;
+		background-clip:padding-box;
+		padding:0px;
+
+		a {
+			display:block;
+			padding:15px;
+		}
+
+		&:hover {
+			background-image:url(../img/transparent-dark.png);
+		}
+	}
+
+	.nav-bar {
+		display:table-row;
+	}
+
+	display:table;
+	width:102%;
+	table-layout: fixed;
+}
+
 
 // 3. Pages
 // --------------------------------------------------
@@ -50,7 +84,6 @@ h2 {
 .responsive {
 	margin:auto;
 	width:55%;
-	margin-top:20px;
 }
 
 .cell {
@@ -81,6 +114,13 @@ h2 {
 .footer {
 	margin-top:20px;
 	margin-bottom:30px;
+	font-size:16px;
+	padding-left:10px;
+
+	a {
+		display:inline-block;
+		margin-right:20px;
+	}
 }
 
 .banner {
@@ -102,5 +142,9 @@ h2 {
 
 	.responsive {
 		width:90%;
+	}
+
+	.navigation .item {
+		font-size:16px !important;
 	}
 }

@@ -17,13 +17,8 @@ Contents
 // 1. Imports
 // --------------------------------------------------
 
-body{
-	background-color: #000;
-}
-
 // 2. Navigation
 // --------------------------------------------------
-
 
 
 // 3. Pages
@@ -32,3 +27,34 @@ body{
 
 // 4. Shared Styles
 // --------------------------------------------------
+
+body, html {
+	background-color: #0c0014;
+	background-image:url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+}
+
+.cell {
+	background-color: transparent;
+	background-image:url(../img/transparent.png);
+	background-repeat: repeat;
+}
+
+.head {
+	text-align: center;
+	padding-top:10px;
+}
+
+.banner {
+	text-align: center;
+	margin:auto;
+	background-color: transparent;
+	background-image:url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	width:250px;
+	height:100px;
+}

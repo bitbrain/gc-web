@@ -41,7 +41,7 @@ Contents
 			padding:15px;
 		}
 
-		&:hover {
+		&:hover, &.current {
 			background-image:url(../img/transparent-dark.png);
 		}
 	}
@@ -59,6 +59,50 @@ Contents
 // 3. Pages
 // --------------------------------------------------
 
+.features {
+
+	.feature {
+		margin-top:20px;
+		vertical-align:top;
+		display:table;
+		width:100%;
+
+		img {
+			width:100px;
+			height:100px;
+		}
+
+		.caption {
+			margin-top:0px;
+			font-size:27px;
+		}
+
+		.image, .content {
+			display:table-cell;
+			vertical-align:top;
+		}
+
+		.content {
+			padding-left:20px;
+			font-size:18px;
+		}
+
+		.text {			
+			line-height:30px;
+			margin-top:6px;
+		}
+	}
+}
+
+.development {
+
+	.join {
+
+		margin-right:9px;
+		font-size:30px;
+	}
+}
+
 
 // 4. Shared Styles
 // --------------------------------------------------
@@ -70,6 +114,11 @@ body, html {
 	background-size: 100% auto;
 	background-position: top center;
 	font-family: spacy;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#b5bf0e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,6 +133,7 @@ h2 {
 .responsive {
 	margin:auto;
 	width:55%;
+	max-width:800px;
 }
 
 .cell {
@@ -93,16 +143,12 @@ h2 {
 	padding:15px;
 }
 
-.green-text, .footer a {
-	background: -webkit-linear-gradient(#deff00, #688316);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.green-text, a, h1 {
+	color:#93ba1c;
 }
 
 .blue-text {
-	background: -webkit-linear-gradient(#0060ff, #490d8c);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	color:#6000ff;
 }
 
 .head {
@@ -133,6 +179,15 @@ h2 {
 	background-position: top center;
 	width:250px;
 	height:100px;
+}
+
+.caption {
+	margin-top:20px;
+}
+
+.box {
+	margin-top:20px;
+	font-size:20px;
 }
 
 // 5. Media queries

@@ -8,19 +8,33 @@ exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scs
 info: Galacticum is an infinite space game. Discover the universe and conquer planets!
 
 navigation:
-- text: Download
-  title: News, Tutorials and more.
+- text: The game
+  title: Features of this game
   url: /
 - text: Progress
   title: Progress of the game
-  url: /
-- text: wiki
-  title: Official galacticum wiki
-  url: /
+  url: /progress/
+- text: Download
+  title: Download the game
+  url: /download/
 
 links:
 - name: Impressum
   url: /
 - name: dev blog
   url: /
+
+features:
+- name: Infinite space
+  img: /img/features/space.png
+  description: Explore an infinite 2D universe full of planets, opponents and resources. Discover unknown places with your space ship!
+- name: Space battles
+  img: img/features/battles.png
+  description: Fight against hundreds of enemies with your self built weapons. Defend your planet by building more ships.
+- name: Conquer planets
+  img: img/features/planets.png
+  description: It's time to build an empire. You can conquer hundreds of planets to create the biggest alliance in the universe!
+- name: Explosions
+  img: img/features/explosions.png
+  description: You can destroy everything in this game - planets, opponents, metroids and many more!
 

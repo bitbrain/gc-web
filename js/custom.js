@@ -1,6 +1,15 @@
-
-
 // Create a team view
 $('.team').icebearTeam({
-        datasource : '/proxy.php?url=https://raw.github.com/MyRealityCoding/galacticum/master/res/meta.json'
+    datasource : '/meta.json'
+});
+
+$(document).ready(function() {
+
+	// Add classes
+	$('.team div.member').addClass('cell box');
+});
+
+$(window).resize(function() {
+	// Add classes
+	$('.team div.member').addClass('cell box');
 });

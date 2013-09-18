@@ -103,6 +103,52 @@ Contents
 	}
 }
 
+.team {
+
+	display:table;
+	width:102%;
+	table-layout: fixed;
+
+	div.member {
+
+		padding-top:15px;
+		width:100%;
+		display:table-cell;
+		text-align:center;
+		font-size:24px;
+		border:15px solid transparent;
+		border-left:0px;
+		background-clip:padding-box;
+
+		.name {
+			font-size:26px;
+		}
+
+		.job {
+			font-size:20px;
+			color:#c81b4c;
+		}
+
+		.avatar {
+			margin-top:5px;
+			width:70%;
+		}
+	}
+
+	.socialbox {
+
+		margin-top:15px;
+
+		.social {
+			display:block;
+			color:#b78031;
+
+			&:hover {
+				color:#e1911e;
+			}
+		}
+	}
+}
 
 // 4. Shared Styles
 // --------------------------------------------------
@@ -162,7 +208,8 @@ h2 {
 	margin-bottom:30px;
 	font-size:16px;
 	padding-left:10px;
-
+	text-align:center;
+	
 	a {
 		display:inline-block;
 		margin-right:20px;
@@ -199,7 +246,40 @@ h2 {
 		width:90%;
 	}
 
-	.navigation .item {
-		font-size:16px !important;
+	.navigation {
+
+		.item {
+			display:block;
+			text-align:center;
+			font-size:24px;
+			border:none;
+			padding:0px;
+			margin-top:10px;
+
+			a {
+				display:block;
+				padding:15px;
+			}
+		}
+
+		.nav-bar {
+			display:block;
+		}
+
+		display:block;
+		padding-bottom:10px;
+		width:auto;
+	}
+
+	.box {
+		margin-top:10px;
+	}
+
+	.team { 
+		display:block;
+
+		div.member {
+			display:block;
+		}
 	}
 }

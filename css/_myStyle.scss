@@ -1,0 +1,307 @@
+/*
+
+Contents
+================================
+
+1. Imports
+2. Navigation
+3. Pages
+4. Shared Styles
+
+================================
+
+*/
+
+// 1. Imports
+// --------------------------------------------------
+
+@import "fonts";
+
+
+// 2. Navigation
+// --------------------------------------------------
+
+.navigation {
+
+	.link-text {
+		margin-left:5px;
+	}
+
+	.item {
+		display:table-cell;
+		text-align:center;
+		font-size:24px;
+		border:15px solid transparent;
+		border-left:0px;
+		background-clip:padding-box;
+		padding:0px;
+
+		a {
+			display:block;
+			padding:15px;
+		}
+
+		&:hover, &.current {
+			background-image:url(../img/transparent-dark.png);
+		}
+	}
+
+	.nav-bar {
+		display:table-row;
+	}
+
+	display:table;
+	width:102%;
+	table-layout: fixed;
+}
+
+
+// 3. Pages
+// --------------------------------------------------
+
+.features {
+
+	.feature {
+		margin-top:20px;
+		vertical-align:top;
+		display:table;
+		width:100%;
+
+		img {
+			width:100px;
+			height:100px;
+		}
+
+		.caption {
+			margin-top:0px;
+			font-size:27px;
+		}
+
+		.image, .content {
+			display:table-cell;
+			vertical-align:top;
+		}
+
+		.content {
+			padding-left:20px;
+			font-size:18px;
+		}
+
+		.text {			
+			line-height:30px;
+			margin-top:6px;
+		}
+	}
+}
+
+.development {
+
+	.join {
+
+		margin-right:9px;
+		font-size:30px;
+	}
+}
+
+.team {
+
+	display:table;
+	width:102%;
+	table-layout: fixed;
+
+	div.member {
+
+		padding-top:15px;
+		width:100%;
+		display:table-cell;
+		text-align:center;
+		font-size:24px;
+		border:15px solid transparent;
+		border-left:0px;
+		background-clip:padding-box;
+
+		.name {
+			font-size:26px;
+		}
+
+		.job {
+			font-size:20px;
+			color:#c81b4c;
+		}
+
+		.avatar {
+			margin-top:5px;
+			width:70%;
+		}
+	}
+
+	.socialbox {
+
+		margin-top:15px;
+
+		.social {
+			display:block;
+			color:#b78031;
+
+			&:hover {
+				color:#e1911e;
+			}
+		}
+	}
+}
+
+.progress {
+
+	padding:0px !important;
+
+	.caption {
+		margin-top:0px;
+		padding-top:14px;
+		padding-bottom:14px;
+		color:#483672;
+	}
+
+	.cell {
+		padding:0px;
+		background:none;
+	}
+
+	.ui-progressbar-value {
+		background-image:url('/img/progress-simple.png');
+		background-repeat: repeat-x;
+	}
+}
+
+// 4. Shared Styles
+// --------------------------------------------------
+
+body, html {
+	background-color: #0c0014;
+	background-image:url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	font-family: spacy;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#b5bf0e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: spacy;
+	margin:0px;
+}
+
+h2 {
+	line-height:40px;
+}
+
+.responsive {
+	margin:auto;
+	width:55%;
+	max-width:800px;
+}
+
+.cell {
+	background-color: transparent;
+	background-image:url(../img/transparent.png);
+	background-repeat: repeat;
+	padding:15px;
+}
+
+.green-text, a, h1 {
+	color:#93ba1c;
+}
+
+.blue-text {
+	color:#6000ff;
+}
+
+.head {
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+
+.footer {
+	margin-top:20px;
+	margin-bottom:30px;
+	font-size:16px;
+	padding-left:10px;
+	text-align:center;
+
+	a {
+		display:inline-block;
+		margin-right:20px;
+	}
+}
+
+.banner {
+	text-align: center;
+	margin:auto;
+	background-color: transparent;
+	background-image:url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	width:250px;
+	height:100px;
+}
+
+.caption {
+	margin-top:20px;
+}
+
+.box {
+	margin-top:20px;
+	font-size:20px;
+}
+
+// 5. Media queries
+// --------------------------------------------------
+
+@media (max-width: 750px) {
+
+	.responsive {
+		width:90%;
+	}
+
+	.navigation {
+
+		.item {
+			display:block;
+			text-align:center;
+			font-size:24px;
+			border:none;
+			padding:0px;
+			margin-top:10px;
+
+			a {
+				display:block;
+				padding:15px;
+			}
+		}
+
+		.nav-bar {
+			display:block;
+		}
+
+		display:block;
+		padding-bottom:10px;
+		width:auto;
+	}
+
+	.box {
+		margin-top:10px;
+	}
+
+	.team { 
+		display:block;
+
+		div.member {
+			display:block;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<div class="footer">
+<span class="info">Design by <a href="http://my-reality.de">Miguel Gonzalez</a></span>
+<span class="links">
+{% for link in site.links %}
+       <a href="{{link.url}}">{{ link.name }}</a>
+{% endfor %}
+</span>

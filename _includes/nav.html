@@ -1,0 +1,32 @@
+
+<div class="navigation">
+  <div class="nav-bar">
+    {% for link in site.navigation %}
+
+          {% assign classes = "green-text" %}
+          {% assign cellclass = "item cell" %}
+          {% assign current = link.url|append:"index.html" %}
+
+          {% if forloop.first %}
+            {% assign classes = classes|append:" first" %}
+            {% assign cellclass = cellclass|append:" first" %}
+          {% endif %}
+
+          {% if forloop.last %}
+            {% assign classes = classes|append:" last" %}
+            {% assign cellclass = cellclass|append:" last" %}
+          {% endif %}
+
+          {% if page.url == current %}
+            {% assign classes = classes|append:" current" %}
+            {% assign cellclass = cellclass|append:" current" %}
+          {% endif %}       
+
+           <div class="{{ cellclass }}">
+             <a href="{{link.url}}" title="{{link.title}}" class="{{ classes }}"
+                 
+             <span class="link-text">{{link.text}}</span></a>
+          </div>
+    {% endfor %}
+  </div>
+</div>

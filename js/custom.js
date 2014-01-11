@@ -9,11 +9,6 @@ $('.progress').icebearProgress({
     datasource : data,
 
     onEnterPhase : function(element) {
-            
-                element.find('.ui-progressbar-value').css({
-                        backgroundImage: "url('/img/progress.png')",
-                        backgroundSize : "100% 100%"
-                });
                 
 
                 element.find('.caption').animate({
@@ -21,10 +16,6 @@ $('.progress').icebearProgress({
                 }, 250);
             },
     onLeavePhase : function(element) {
-            
-                element.find('.ui-progressbar-value').css({
-                        backgroundImage: "url('/img/progress-simple.png')"
-                });
 
                 element.find('.caption').animate({
                     color : '#109ce5'
